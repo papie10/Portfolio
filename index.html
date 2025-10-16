@@ -1,47 +1,285 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Portfolio</title>
-</head>
-<body>
-    <div class="header">
-        <h1>Elijah Leke</h1>
-            <p>DevOps Engineer | Cloud | CI/CD | Automation</p>
-    </div>
-    <div class="container">
-        <h2>About Me</h2>
-        <p>I’m a passionate DevOps engineer with experience in automation, cloud infrastructure, and containerization. I
-            enjoy building efficient CI/CD pipelines and working with cloud-native technologies.</p>
-        <h2>Skills</h2>
-        <ul>
-            <li>Docker & Kubernetes</li>
-            <li>AWS, Azure, GCP</li>
-            <li>Terraform & CloudFormation</li>
-            <li>CI/CD with Jenkins & GitHub Actions</li>
-            <li>Monitoring: Prometheus, Grafana</li>
-        </ul>
-    <h2>Certifications</h2>
-    <ul>
-        <li>AWS Certified Solutions Architect</li>
-        <li>Certified Kubernetes Administrator (CKA)</li>
-        <li>CompTIA Security+</li>
-    </ul>
-    <h2>Projects</h2>
-        <ul>
-            <li><strong>CI/CD Pipeline:</strong> Automated Dockerised app deployments using Jenkins and GitHub
-            Webhooks</li>
-            <li><strong>K8s Deployment:</strong> Hosted scalable web apps on Kubernetes with Helm</li>
-            <li><strong>Infra as Code:</strong> Created reusable Terraform modules for cloud environments</li>
-        </ul>
-    <h2>Contact</h2>
-    <p>Email:elijahleke@example.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/janedoe" target="_blank">linkedin.com/in/janedoe</a></p>
-    </div>
-<div class="footer">
- © 2025 Elijah Leke. All rights reserved.
- </div>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lucky Praise — Frontend • Cloud • DevOps</title>
 
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom stylesheet -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body data-theme>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom py-3">
+    <div class="container-md">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home" style="font-weight:700; text-decoration:none;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden focusable="false" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" rx="6" fill="url(#g)"></rect>
+          <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#6a11cb"/><stop offset="1" stop-color="#2575fc"/></linearGradient></defs>
+        </svg>
+        <span style="color: var(--text);">Lucky Praise</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER / HERO -->
+  <header id="home" class="site-header">
+    <div class="container text-center">
+      <h1 class="reveal">Lucky Praise</h1>
+      <p class="lead reveal">Frontend Developer • Cloud Engineer • DevOps Practitioner</p>
+      <div class="mt-3 reveal">
+        <a class="btn btn-light btn-lg" href="#projects">View Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CARD -->
+  <main class="main-card" role="main">
+    <section id="about" class="mb-4 reveal">
+      <div>
+        <h2 class="section-title"><span class="bar"></span>About Me</h2>
+        <p class="mb-0">
+          I'm a hands-on engineer with experience in frontend development, cloud platforms, and DevOps.
+          I like creating clean, responsive user interfaces, setting up scalable cloud environments, and automating deployments with CI/CD tools.
+          My goal is always to build systems that run smoothly, deploy faster, and perform reliably from development to production.
+        </p>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="skills" class="mb-4 reveal">
+      <h2 class="section-title"><span class="bar"></span>Skills</h2>
+      <ul class="skill-list" aria-label="Skills list">
+        <li>Docker & Kubernetes</li>
+        <li>AWS, Azure & GCP</li>
+        <li>Terraform</li>
+        <li>CI/CD: Jenkins, GitHub Actions</li>
+        <li>Frontend: HTML, CSS, JavaScript, React</li>
+      </ul>
+    </section>
+    <hr>
+    <section id="certs" class="mb-4 reveal">
+      <h2 class="section-title"><span class="bar"></span>Certifications & Learning</h2>
+      <ul class="list-unstyled">
+        <li>AWS & Cloud Fundamentals</li>
+        <li>Docker and Kubernetes Basics</li>
+        <li>CI/CD and DevOps Practices</li>
+      </ul>
+    </section>
+<hr>
+   <section id="projects" class="mb-4 reveal">
+  <h2 class="section-title"><span class="bar"></span>Projects</h2>
+  <div class="projects-grid" role="list">
+
+    <!-- Netflix Clone -->
+    <article class="project-card" role="listitem" tabindex="0"
+             data-title="Netflix Clone"
+             data-desc="Recreated the Netflix website UI with responsive design and dynamic carousels using HTML, CSS, and JavaScript."
+             data-tech="HTML · CSS · JavaScript"
+             data-link="https://github.com/papie10/netflix-clone.git">
+      <div>
+        <h5>Netflix Clone</h5>
+        <p class="muted">Recreated Netflix front-end and responsive design.</p>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <small class="muted">Frontend</small>
+        <a href="https://github.com/papie10/netflix-clone.git" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
+      </div>
+    </article>
+
+    <!-- iOS Calculator Clone -->
+    <article class="project-card" role="listitem" tabindex="0"
+             data-title="iOS Calculator Clone"
+             data-desc="Built a functional iOS-style calculator with responsive layout and keyboard support using JavaScript for the logic."
+             data-tech="HTML · CSS · JavaScript"
+             data-link="https://github.com/papie10/calculator.git">
+      <div>
+        <h5>iOS Calculator Clone</h5>
+        <p class="muted">Functional calculator UI + logic, keyboard-friendly.</p>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <small class="muted">Frontend</small>
+        <a href="https://github.com/papie10/calculator.git" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
+      </div>
+    </article>
+
+    <!-- Ansible Automation -->
+    <article class="project-card" role="listitem" tabindex="0"
+             data-title="Ansible Automation"
+             data-desc="Automated server configuration and deployments using Ansible playbooks for reproducible environments."
+             data-tech="Ansible · Automation"
+             data-link="https://github.com/papie10/Ansible.git">
+      <div>
+        <h5>Ansible Automation</h5>
+        <p class="muted">Infrastructure automation with Ansible playbooks.</p>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <small class="muted">DevOps</small>
+        <a href="https://github.com/papie10/Ansible.git" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
+      </div>
+    </article>
+
+    <!-- Portfolio Website -->
+    <article class="project-card" role="listitem" tabindex="0"
+             data-title="Portfolio Website"
+             data-desc="My personal portfolio (this site) built with Bootstrap and custom CSS — responsive and accessible."
+             data-tech="HTML · Bootstrap · CSS"
+             data-link="#">
+      <div>
+        <h5>Portfolio Website</h5>
+        <p class="muted">Responsive portfolio built with Bootstrap + custom JS.</p>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <small class="muted">Frontend</small>
+        <button class="btn btn-sm btn-outline-secondary view-project" type="button">View</button>
+      </div>
+    </article>
+
+    <!-- CI/CD Practice -->
+    <article class="project-card" role="listitem" tabindex="0"
+             data-title="CI/CD Practice"
+             data-desc="Set up GitHub Actions workflow to run tests, build containers, and deploy to a cloud environment (practice project)."
+             data-tech="GitHub Actions · CI/CD"
+             data-link="#">
+      <div>
+        <h5>CI/CD Practice</h5>
+        <p class="muted">Automated build/test/deploy pipeline using GitHub Actions.</p>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <small class="muted">DevOps</small>
+        <button class="btn btn-sm btn-outline-secondary view-project" type="button">View</button>
+      </div>
+    </article>
+
+    <!-- Cloud Deployment -->
+    <article class="project-card" role="listitem" tabindex="0"
+             data-title="Cloud Deployment (S3+CloudFront)"
+             data-desc="Deployed a static site to AWS S3 and served it globally via CloudFront with HTTPS and caching."
+             data-tech="AWS S3 · CloudFront"
+             data-link="#">
+      <div>
+        <h5>Cloud Deployment</h5>
+        <p class="muted">Static website deployed to AWS with CDN.</p>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <small class="muted">Cloud</small>
+        <button class="btn btn-sm btn-outline-secondary view-project" type="button">View</button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+    <hr>
+
+    <section id="contact" class="mb-0 reveal">
+      <h2 class="section-title"><span class="bar"></span>Contact</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <form id="contactForm">
+            <input id="name" class="contact-input w-100 mb-2" placeholder="Your name" required>
+            <textarea id="message" class="contact-input w-100 mb-2" rows="5" placeholder="Your message" required></textarea>
+            <div class="d-flex gap-2">
+              <button type="submit" class="btn-accent">Send Email</button>
+              <a class="btn btn-outline-secondary" href="https://github.com/papie10" target="_blank" rel="noopener">View GitHub</a>
+            </div>
+            <div id="formNote" class="mt-2 small muted" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <h5>Get in touch</h5>
+          <!-- <p class="muted">Email: <a href="mailto:Onanefe879@gmail.com">Onanefe879@gmail.com</a></p> -->
+          <div class="contact-links mt-3">
+            <a href="mailto:Onanefe879@gmail.com">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219 .1-.643 .175-1.237 .175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04 .21v.227c0 .586.227 .8.581 .8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573 .245-.573 .791"/>
+              </svg>
+              Onanefe879@gmail.com
+            </a>
+            <a href="https://github.com/papie10" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                  0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+                  -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07
+                  -1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12
+                  0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82
+                  2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65
+                  3.95.29 .25.54 .73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15 .46.55 .38A8.01
+                  8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+              </svg>
+              github.com/papie10
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container-md">
+      <div class="d-flex justify-content-between align-items-center flex-column flex-md-row gap-2">
+        <div class="text-center text-md-start">
+          <strong>Lucky Praise</strong><br>
+          <small class="muted">Frontend Developer • Cloud • DevOps</small>
+        </div>
+
+        <!-- location & availability placed in footer as requested -->
+        <div class="text-center">
+          <span class="muted">📍 Based in Nigeria | ✅ Available for Remote & On-site Opportunities</span>
+        </div>
+
+        <div class="muted small text-center text-md-end">© <span id="year"></span> Lucky Praise. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Project</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p id="modalDesc" class="muted"></p>
+          <p><strong>Tech:</strong> <span id="modalTech"></span></p>
+        </div>
+        <div class="modal-footer">
+          <a id="modalLink" class="btn btn-outline-primary" target="_blank" rel="noopener">View Project</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS + Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
